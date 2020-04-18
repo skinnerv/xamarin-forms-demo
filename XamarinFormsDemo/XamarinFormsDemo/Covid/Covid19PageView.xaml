@@ -10,6 +10,12 @@
             <Label Text="Here will be stats about Covid19"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Click to refresh disease status"
+                    x:Name="RefreshCovid19DiseaseStatus"
+                    Clicked="RefreshCovid19DiseaseStatus_Clicked"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

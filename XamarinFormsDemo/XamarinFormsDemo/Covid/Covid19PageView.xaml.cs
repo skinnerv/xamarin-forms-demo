@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsDemo.Control;
 
 namespace XamarinFormsDemo.Covid
 {
@@ -15,6 +16,14 @@ namespace XamarinFormsDemo.Covid
         public Covid19PageView()
         {
             InitializeComponent();
+        }
+
+        private void RefreshCovid19DiseaseStatus_Clicked(object sender, EventArgs e)
+        {
+            UpdateWebContentsDataCovid19 updateWebContentsDataCovid19 = new UpdateWebContentsDataCovid19();
+            updateWebContentsDataCovid19.DownloadFreshCovid19Data();
+
+            RefreshCovid19DiseaseStatus.Text = "Covid status has been refreshed";
         }
     }
 }
