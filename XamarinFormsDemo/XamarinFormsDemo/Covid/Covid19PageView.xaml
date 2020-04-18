@@ -6,16 +6,48 @@
              mc:Ignorable="d"
              x:Class="XamarinFormsDemo.Covid.Covid19PageView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Here will be stats about Covid19"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Click to refresh disease status"
-                    x:Name="RefreshCovid19DiseaseStatus"
-                    Clicked="RefreshCovid19DiseaseStatus_Clicked"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="CenterAndExpand"
-                    />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Spacing="10">
+                <Label Text="Here will be stats about Covid19"
+                    VerticalOptions ="Start" 
+                    HorizontalOptions="CenterAndExpand" />
+                <Button Text="Click to refresh disease status"
+                        x:Name="RefreshCovid19DiseaseStatus"
+                        Clicked="RefreshCovid19DiseaseStatus_Clicked"
+                        VerticalOptions="Center"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                <Grid Margin="10"
+                      VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Show Poland stats"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       />
+                    <Label Text="Show World stats"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       />
+                    <Switch IsToggled="False"
+                        x:Name="PolandSwitch"   
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        />
+                    <Switch IsToggled="True"
+                        x:Name="World"     
+                        Grid.Row="1"
+                       Grid.Column="1"
+                        />
+                </Grid>                
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
+    
 </ContentPage>
