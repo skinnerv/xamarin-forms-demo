@@ -15,12 +15,12 @@ namespace XamarinFormsDemo.Control
         public async void DownloadFreshCovid19Data()
         {
             var client = new HttpClient();
-            Console.WriteLine("lmp Try to get data");
+            Console.WriteLine("dlp Try to get data");
             HttpResponseMessage responseMessage = await client.GetAsync("https://bing.com/covid/data");
             responseMessage.EnsureSuccessStatusCode();
             string responsHtml = await responseMessage.Content.ReadAsStringAsync();
             var lenOfResponse = responsHtml.Length;
-            Console.WriteLine("lmp Download data has been done {0}", lenOfResponse.ToString());
+            Console.WriteLine("dlp Download data has been done {0}", lenOfResponse.ToString());
         }
     }
    
