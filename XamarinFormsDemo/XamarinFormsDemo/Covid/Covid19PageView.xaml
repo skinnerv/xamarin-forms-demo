@@ -7,7 +7,7 @@
              x:Class="XamarinFormsDemo.Covid.Covid19PageView">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Spacing="10">
+            <StackLayout Margin="20">
                 <Label Text="Here will be stats about Covid19"
                     VerticalOptions ="Start" 
                     HorizontalOptions="CenterAndExpand" />
@@ -35,17 +35,33 @@
                        Grid.Row="1"
                        Grid.Column="0"
                        />
-                    <Switch IsToggled="False"
+                    <Switch IsToggled="{Binding PolandSwitch}"
                         x:Name="PolandSwitch"   
                         Grid.Row="0"
                         Grid.Column="1"
                         />
-                    <Switch IsToggled="True"
-                        x:Name="World"     
+                    <Switch IsToggled="{Binding WorldSwitch}"
+                        x:Name="WorldSwitch"     
                         Grid.Row="1"
                        Grid.Column="1"
                         />
-                </Grid>                
+                </Grid>
+                <Label Text="Country Name"/>
+                <Label Text="{Binding CountryName}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                <Label Text="Total Confirmed"/>
+                <Label Text="{Binding TotalConfirmed}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                <Label Text="Total Deaths"/>
+                <Label Text="{Binding TotalDeaths}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                <Label Text="Total Recovered"/>
+                <Label Text="{Binding TotalRecovered}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                <Label Text="Total Recovered Delta"/>
+                <Label Text="{Binding TotalRecoveredDelta}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                <Label Text="Total Deaths Delta"/>
+                <Label Text="{Binding TotalDeathsDelta}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                <Label Text="Total Confirmed Delta"/>
+                <Label Text="{Binding TotalConfirmedDelta}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
+                <Label Text="Time LastUpdated"/>
+                <Label Text="{Binding LastUpdated}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

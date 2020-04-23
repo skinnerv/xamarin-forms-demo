@@ -7,6 +7,7 @@ namespace XamarinFormsDemo.Control
 {
     class UpdateWebContentsDataCovid19
     {
+        public string responsHtml { get; private set; }
         public UpdateWebContentsDataCovid19()
         {
 
@@ -18,9 +19,8 @@ namespace XamarinFormsDemo.Control
             Console.WriteLine("dlp Try to get data");
             HttpResponseMessage responseMessage = await client.GetAsync("https://bing.com/covid/data");
             responseMessage.EnsureSuccessStatusCode();
-            string responsHtml = await responseMessage.Content.ReadAsStringAsync();
-            var lenOfResponse = responsHtml.Length;
-            Console.WriteLine("dlp Download data has been done {0}", lenOfResponse.ToString());
+            responsHtml = await responseMessage.Content.ReadAsStringAsync(); //pobranie nowych danych do string responsHtml
+            Console.WriteLine("dlp Download data has been done {0}");
         }
     }
    
