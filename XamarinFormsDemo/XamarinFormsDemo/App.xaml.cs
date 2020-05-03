@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsDemo.View.PoopTracker;
 
 namespace XamarinFormsDemo
 {
@@ -11,7 +12,8 @@ namespace XamarinFormsDemo
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new PoopHomePageView());
         }
 
         protected override void OnStart()

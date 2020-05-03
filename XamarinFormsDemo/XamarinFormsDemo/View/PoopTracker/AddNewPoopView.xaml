@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinFormsDemo.View.PoopTracker.AddNewPoopView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  Text="Add new Poop!"
+                    HorizontalOptions="Center"/>
+            <Label Text="Choose size of poop"/>
+            <Grid BackgroundColor="Azure">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Small"
+                    x:Name="SmallButton"
+                    Clicked="SmallButton_Clicked"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+                <Button Text="Medium"
+                    x:Name="MediumButton"
+                    Clicked="MediumButton_Clicked" 
+                    Grid.Row="0"
+                    Grid.Column="1"/>
+                <Button Text="Big"
+                    x:Name="BigButton"
+                    Clicked="BigButton_Clicked" 
+                    Grid.Row="0"
+                    Grid.Column="2"/>
+            </Grid>
+            <Label Text="Choose type of poop"/>
+            <Grid BackgroundColor="Azure">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Frame Padding="10" Grid.Row="0" Grid.Column="0" BorderColor="Yellow" BackgroundColor="Transparent">
+                    <Image Source="Type1.jpg"  Aspect="AspectFit" BackgroundColor="DarkBlue"  Scale="1" Margin="-10"/>
+                </Frame>
+                <ImageButton Source="Type2.jpg" Grid.Row="0" Grid.Column="1" Aspect="AspectFit" CornerRadius="10" BorderColor="DeepPink" BorderWidth="10"/>
+                <!--<Button Text="Type 1" Grid.Row="0" Grid.Column="0"/>-->
+                <!--<Button Text="Type 2" Grid.Row="0" Grid.Column="1"/>-->
+                <Button Text="Type 3" Grid.Row="0" Grid.Column="2"/>
+                <Button Text="Type 4" Grid.Row="1" Grid.Column="0"/>
+                <Button Text="Type 5" Grid.Row="1" Grid.Column="1"/>
+                <Button Text="Type 6" Grid.Row="1" Grid.Column="2"/>
+                <Button Text="Type 7" Grid.Row="2" Grid.Column="0"/>
+                <Button Text="Type 8" Grid.Row="2" Grid.Column="1"/>
+                <Button Text="Type 9" Grid.Row="2" Grid.Column="2"/>
+            </Grid>
+            <Label Text="Choose colour of poop"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView BackgroundColor="Black" Grid.Row="0" Grid.Column="0" CornerRadius="10" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <BoxView BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1" CornerRadius="10" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <BoxView BackgroundColor="Brown" Grid.Row="0" Grid.Column="2" CornerRadius="10" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <BoxView BackgroundColor="DarkGreen" Grid.Row="0" Grid.Column="3" CornerRadius="10" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <BoxView BackgroundColor="#F78B51" Grid.Row="0" Grid.Column="4" CornerRadius="10" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+            <Label Text="Additional info"/>
+            <Grid>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

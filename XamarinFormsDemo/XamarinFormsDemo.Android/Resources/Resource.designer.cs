@@ -5794,6 +5794,27 @@ namespace XamarinFormsDemo.Droid
 			// aapt resource value: 0x7F070075
 			public const int tooltip_frame_light = 2131165301;
 			
+			// aapt resource value: 0x7F070076
+			public const int Type1 = 2131165302;
+			
+			// aapt resource value: 0x7F070077
+			public const int Type2 = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int Type3 = 2131165304;
+			
+			// aapt resource value: 0x7F070079
+			public const int Type4 = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int Type5 = 2131165306;
+			
+			// aapt resource value: 0x7F07007B
+			public const int Type6 = 2131165307;
+			
+			// aapt resource value: 0x7F07007C
+			public const int Type7 = 2131165308;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
