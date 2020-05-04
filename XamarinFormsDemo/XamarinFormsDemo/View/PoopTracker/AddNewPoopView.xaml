@@ -38,28 +38,22 @@
             <Label Text="Choose type of poop"/>
             <Grid BackgroundColor="Azure">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Frame Padding="10" Grid.Row="0" Grid.Column="0" BorderColor="Yellow" BackgroundColor="Transparent">
-                    <Image Source="Type1.jpg"  Aspect="AspectFit" BackgroundColor="DarkBlue"  Scale="1" Margin="-10"/>
-                </Frame>
-                <ImageButton Source="Type2.jpg" Grid.Row="0" Grid.Column="1" Aspect="AspectFit" CornerRadius="10" BorderColor="DeepPink" BorderWidth="10"/>
-                <!--<Button Text="Type 1" Grid.Row="0" Grid.Column="0"/>-->
-                <!--<Button Text="Type 2" Grid.Row="0" Grid.Column="1"/>-->
-                <Button Text="Type 3" Grid.Row="0" Grid.Column="2"/>
-                <Button Text="Type 4" Grid.Row="1" Grid.Column="0"/>
-                <Button Text="Type 5" Grid.Row="1" Grid.Column="1"/>
-                <Button Text="Type 6" Grid.Row="1" Grid.Column="2"/>
-                <Button Text="Type 7" Grid.Row="2" Grid.Column="0"/>
-                <Button Text="Type 8" Grid.Row="2" Grid.Column="1"/>
-                <Button Text="Type 9" Grid.Row="2" Grid.Column="2"/>
+                <ImageButton Source="Type1.jpg" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" CornerRadius="10" Scale="1" BackgroundColor="Transparent"/>
+                <ImageButton Source="Type2.jpg" Grid.Row="0" Grid.Column="1" Aspect="AspectFit" CornerRadius="10" Scale="1" BackgroundColor="Transparent"/>
+                <ImageButton Source="Type3.jpg" Grid.Row="0" Grid.Column="2" Aspect="AspectFit" CornerRadius="10" Scale="1" BackgroundColor="Transparent"/>
+                <ImageButton Source="Type4.jpg" Grid.Row="1" Grid.Column="0" Aspect="AspectFit" CornerRadius="10" Scale="1" BackgroundColor="Transparent"/>
+                <ImageButton Source="Type5.jpg" Grid.Row="1" Grid.Column="1" Aspect="AspectFit" CornerRadius="10" Scale="1" BackgroundColor="Transparent"/>
+                <ImageButton Source="Type6.jpg" Grid.Row="1" Grid.Column="2" Aspect="AspectFit" CornerRadius="10" Scale="1" BackgroundColor="Transparent"/>
+                <ImageButton Source="Type7.jpg" Grid.Row="2" Grid.Column="0" Aspect="AspectFit" CornerRadius="10" Scale="1" BackgroundColor="Transparent"/>
             </Grid>
             <Label Text="Choose colour of poop"/>
             <Grid>
